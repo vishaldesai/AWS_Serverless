@@ -45,8 +45,8 @@ order_item_id,order_id,order_item_product_id,order_item_quantity,order_item_subt
 10,5,365,5,299.95,59.99
 ....
 
-Sample transformed output from kms encrypted S3 file:
-1,2013-07-25 00:00:00.0,11599,CLOSED,1,957,1,299.98,299.98
+Sample transformed output from kms encrypted S3 file:<br />
+1,2013-07-25 00:00:00.0,11599,CLOSED,1,957,1,299.98,299.98<br />
 2,2013-07-25 00:00:00.0,256,PENDING_PAYMENT,4,403,1,129.99,129.99
 2,2013-07-25 00:00:00.0,256,PENDING_PAYMENT,3,502,5,250.0,50.0
 2,2013-07-25 00:00:00.0,256,PENDING_PAYMENT,2,1073,1,199.99,199.99
