@@ -16,8 +16,8 @@ Below example demonstrates how to read two csv files into pyspark DF using Glue,
 ## Program Files
 ----------------
 
-Glue job file: files/glue_transform.py
-To run glue job: files/run_gluejob.py
+Glue job file: files/glue_transform.py  
+To run glue job: files/run_gluejob.py  
 
 ## Sample Input and Output File View
 ------------------------------------
