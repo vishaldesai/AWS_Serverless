@@ -2,7 +2,7 @@
 # Tranform Data using Serverless Glue, S3 and KMS
 -------------------------------------------------
 
-Below example demonstrates how to read two csv files into pyspark DF using Glue, transform data and stage it and finally apply kms key to data and store it in target bucket.
+Below example demonstrates how to read two csv files into pyspark DF using Glue, transform data and stage it and finally apply kms key to encrypt data and store it in target bucket.
 
 ## Prerequisites
 ----------------
