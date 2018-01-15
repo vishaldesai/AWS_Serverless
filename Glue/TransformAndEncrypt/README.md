@@ -4,6 +4,8 @@
 
 Below example demonstrates how to read two csv files into pyspark DF using Glue, transform data and stage it and finally apply kms key to encrypt data and store it in target bucket.
 
+Jan-2018 update: There was a new feature introduced for S3 buckets where you can specify KMS key to encrypt data at bucket level or in other words whatever objects land in that bucket can be automatically encrypted using KMS key. Code from line 31 in glue_transform.py is not necessary when S3 bucket is encrypted using KMS key.
+
 ## Prerequisites
 ----------------
 
