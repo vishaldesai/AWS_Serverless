@@ -1,13 +1,13 @@
 
-## Steps:  
+# Steps:  
 
-# Create service  
+## Create service  
 serverless create --template aws-nodejs --path Provisioning  
 
-# Update serverless.yml file  
-Example attached  
+## Update serverless.yml file  
+Sample file attached  
 
-# Deploy  
+## Deploy  
 serverless deploy  
 Serverless: Packaging service...  
 Serverless: Excluding development dependencies...  
