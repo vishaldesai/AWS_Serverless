@@ -1,0 +1,41 @@
+#Example of how to retain stack resources after deleting stack
+service: lambda1
+   
+provider:
+  name: aws
+  runtime: nodejs6.10
+  memorySize: 256 
+  timeout: 10 
+  stage: dev  
+  role: <arn of role>
+  region: <region>
+
+  deploymentBucket: 
+    name: <bucket>
+
+  stackPolicy:
+    DeletionPolicy: Retain
+
+  environment:
+    ENV_1: '123'
+    
+  custom:
+    dxc-role-extension: <role>
+    dxc-environment-name: <env>
+
+
+functions:
+  lambda1:
+    handler: index.handler
+    name: lambda1
+
+resources:
+    Resources:
+        TestserverlessLogGroup:
+            Type: AWS::Logs::LogGroup
+            DeletionPolicy: "Retain"
+            Properties:
+                RetentionInDays: "90"                
+        TestserverlessLambdaFunction:
+            Type: AWS::Lambda::Function
+            DeletionPolicy: "Retain"    
