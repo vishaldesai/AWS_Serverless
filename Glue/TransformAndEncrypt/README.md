@@ -56,3 +56,8 @@ Sample transformed output from kms encrypted S3 file:
 4,2013-07-25 00:00:00.0,8827,CLOSED,7,502,3,150.0,50.0  
 4,2013-07-25 00:00:00.0,8827,CLOSED,6,365,5,299.95,59.99  
 ....
+
+## Other alternative
+
+sc._jsc.hadoopConfiguration().set("fs.s3.enableServerSideEncryption", "true")
+sc._jsc.hadoopConfiguration().set("fs.s3.serverSideEncryption.kms.keyId", encryption_key_arn)
